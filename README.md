@@ -47,60 +47,23 @@ Client ➔ FastAPI ➔ Input Guardrails ➔ CrewAI Orchestrator
 ## 📁 Project Structure
 
 ```
-cred-support-agent/
-│
-├── data/                              # Mock data layer
-│   ├── policies/                      # 5 banking policy documents (.txt)
-│   │   ├── credit_card_policy.txt     #   Credit card terms, APR, late fees, rewards
-│   │   ├── loan_policy.txt            #   Personal & home loan terms, EMI defaults
-│   │   ├── kyc_aml_policy.txt         #   KYC requirements, AML controls, sanctions
-│   │   ├── dispute_resolution_policy.txt  # Dispute, chargeback, refund procedures
-│   │   └── account_closure_policy.txt #   Closure, dormancy, data retention rules
-│   └── customers.json                 # 5 mock customers with accounts, loans, transactions
-│
+banking-agent/
+├── data/
+│   ├── policies/           # 5 banking policy docs (.txt)
+│   └── customers.json      # 5 mock customers with accounts, loans, txns
 ├── src/
-│   ├── api/                           # FastAPI application layer
-│   │   ├── main.py                    #   App entry point, CORS, middleware, exception handler
-│   │   ├── routers.py                 #   /query and /health endpoints
-│   │   └── schemas.py                 #   Pydantic v2 request/response models
-│   │
-│   ├── agents/                        # CrewAI agent definitions
-│   │   ├── policy_agent.py            #   RAG-powered policy specialist (max_iter=5)
-│   │   ├── record_agent.py            #   Customer record lookup specialist (max_iter=5)
-│   │   ├── support_agent.py           #   General banking support agent (max_iter=5)
-│   │   └── crew.py                    #   Crew orchestrator, query classifier, memory
-│   │
-│   ├── tools/                         # CrewAI @tool definitions
-│   │   ├── policy_search_tool.py      #   search_policy_documents — vector store search
-│   │   └── record_lookup_tool.py      #   lookup_customer, get_account_balance,
-│   │                                  #   get_loan_details, get_recent_transactions
-│   │
-│   ├── rag/                           # RAG pipeline
-│   │   ├── document_loader.py         #   Loads .txt policy files → LangChain Documents
-│   │   ├── chunker.py                 #   Recursive text splitting (500 chars, 50 overlap)
-│   │   └── vector_store.py            #   ChromaDB wrapper: ingest() + search() with retries
-│   │
-│   ├── guardrails/                    # Security & validation
-│   │   ├── input_validator.py         #   Prompt injection, OOD, cross-customer access checks
-│   │   └── output_sanitizer.py        #   PII masking (account, phone, email, Aadhaar, PAN)
-│   │
-│   ├── evaluation/                    # Evaluation framework
-│   │   ├── eval_dataset.json          #   12 test cases across policy, record, guardrail, support
-│   │   └── evaluate.py                #   Evaluation script — guardrail + routing accuracy
-│   │
-│   └── utils/                         # Shared utilities
-│       ├── config.py                  #   Pydantic BaseSettings with .env loading
-│       ├── logging_config.py          #   Structured JSON logging with request ID context
-│       └── token_tracker.py           #   Per-request and cumulative token/latency metrics
-│
-├── tests/                             # Unit tests (53 tests)
-│   ├── test_guardrails.py             #   29 tests — injection, OOD, PII masking, sanitization
-│   ├── test_tools.py                  #   13 tests — customer lookup, balance, loans, transactions
-│   └── test_rag.py                    #   11 tests — document loading, chunking, metadata
-│
-├── .env.example                       # Environment variable template
-├── requirements.txt                   # Python dependencies
-└── README.md                          # This file
+│   ├── api/                # FastAPI app, routers, Pydantic schemas
+│   ├── agents/             # 3 CrewAI agents + crew orchestrator
+│   ├── tools/              # @tool policy search + 4 record lookups
+│   ├── rag/                # Doc loader → chunker → ChromaDB vector store
+│   ├── guardrails/         # Input validation + PII output masking
+│   ├── evaluation/         # Eval dataset (12 cases) + eval script
+│   └── utils/              # Config, structured logging, token tracker
+├── tests/                  # 53 unit tests
+├── .env.example
+├── requirements.txt
+└── README.md
+
 ```
 
 ---
@@ -115,7 +78,6 @@ cred-support-agent/
 ### Step 1: Create & Activate Virtual Environment
 
 ```bash
-cd cred-support-agent
 python3 -m venv venv
 source venv/bin/activate       # macOS/Linux
 # venv\Scripts\activate        # Windows
