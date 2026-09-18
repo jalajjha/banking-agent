@@ -1,0 +1,47 @@
+DISPUTE RESOLUTION AND GRIEVANCE REDRESSAL POLICY — Cred Financial Services
+Document ID: POL-DISPUTE-004
+Effective Date: February 1, 2025
+Version: 2.5
+
+1. SCOPE
+1.1 This policy covers all disputes, complaints, and grievances raised by Cred customers regarding credit cards, loans, payments, account operations, and digital banking services.
+
+2. COMPLAINT CHANNELS
+2.1 Customers may raise complaints through the following channels:
+    - Cred Mobile App: In-app support chat (available 24/7).
+    - Email: support@credfinancial.com (response within 24 hours).
+    - Phone: Toll-free helpline 1800-XXX-XXXX (available Mon–Sat, 9 AM – 8 PM IST).
+    - Branch Visit: Walk-in to any Cred branch during business hours.
+    - Written Complaint: Postal mail to the Registered Office address.
+2.2 All complaints are assigned a unique Ticket ID for tracking purposes.
+
+3. RESOLUTION TIMELINES
+3.1 Level 1 — Customer Service Team:
+    - Acknowledgment: Within 24 hours of complaint receipt.
+    - Resolution: Within 7 working days for standard complaints.
+    - Complex cases (involving third parties, cross-border transactions): Within 30 working days.
+3.2 Level 2 — Nodal Officer:
+    - If the customer is unsatisfied with the Level 1 resolution, they may escalate to the Nodal Officer within 30 days.
+    - The Nodal Officer will review and respond within 15 working days.
+3.3 Level 3 — Banking Ombudsman:
+    - If the complaint remains unresolved after Level 2, the customer may approach the RBI Banking Ombudsman under the Integrated Ombudsman Scheme.
+    - Cred will fully cooperate with the Ombudsman's investigation.
+
+4. TRANSACTION DISPUTE PROCESS
+4.1 Unauthorized Transaction Claims:
+    - Must be reported within 7 days of the transaction.
+    - If reported within 3 days, the customer's liability is zero (as per RBI circular on limiting liability).
+    - If reported between 4–7 days, liability is capped at ₹10,000.
+    - If reported after 7 days, liability is determined on a case-by-case basis.
+4.2 Merchant Disputes:
+    - Cred initiates a chargeback with the acquiring bank / payment network.
+    - Provisional credit is issued within 10 working days.
+    - Final resolution within 45–90 days depending on the card network (Visa/Mastercard/RuPay).
+
+5. REFUND POLICY
+5.1 Approved refunds are processed within 5–7 working days.
+5.2 Refund method: Original payment method (card credit, bank transfer, or wallet credit).
+5.3 Interest reversal: If a disputed charge accrued interest before resolution, the interest is reversed upon approval of the dispute.
+
+6. COMPENSATION
+6.1 If Cred fails to resolve a complaint within the stipulated timeline, the customer is entitled to compensation of ₹100 per day of delay, up to a maximum of ₹5,000.

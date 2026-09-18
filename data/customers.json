@@ -1,0 +1,259 @@
+{
+  "customers": [
+    {
+      "customer_id": "CUST001",
+      "name": "Rajesh Kumar Sharma",
+      "email": "rajesh.sharma@email.com",
+      "phone": "+91-98765-43210",
+      "date_of_birth": "1985-06-15",
+      "kyc_status": "verified",
+      "kyc_last_updated": "2024-11-20",
+      "risk_profile": "low",
+      "accounts": [
+        {
+          "account_id": "ACC-001-SAV",
+          "type": "savings",
+          "balance": 245670.50,
+          "currency": "INR",
+          "status": "active",
+          "opened_date": "2020-03-10"
+        },
+        {
+          "account_id": "ACC-001-CC",
+          "type": "credit_card",
+          "card_type": "Gold",
+          "credit_limit": 300000,
+          "outstanding_balance": 45230.75,
+          "minimum_due": 2261.54,
+          "due_date": "2025-10-15",
+          "reward_points": 12450,
+          "status": "active"
+        }
+      ],
+      "loans": [
+        {
+          "loan_id": "LOAN-001-PL",
+          "type": "personal",
+          "principal": 500000,
+          "outstanding": 325000,
+          "interest_rate": 12.5,
+          "emi_amount": 11374,
+          "tenure_months": 48,
+          "remaining_emis": 32,
+          "next_emi_date": "2025-10-05",
+          "status": "active"
+        }
+      ],
+      "recent_transactions": [
+        {"txn_id": "TXN-20250901-001", "date": "2025-09-01", "type": "debit", "amount": 5499.00, "description": "Amazon.in Purchase", "category": "shopping", "account_id": "ACC-001-CC"},
+        {"txn_id": "TXN-20250902-002", "date": "2025-09-02", "type": "credit", "amount": 85000.00, "description": "Salary Credit — TechCorp Ltd", "category": "income", "account_id": "ACC-001-SAV"},
+        {"txn_id": "TXN-20250903-003", "date": "2025-09-03", "type": "debit", "amount": 2200.00, "description": "Swiggy Food Order", "category": "food", "account_id": "ACC-001-CC"},
+        {"txn_id": "TXN-20250905-004", "date": "2025-09-05", "type": "debit", "amount": 11374.00, "description": "EMI Auto-Debit — Personal Loan", "category": "loan_emi", "account_id": "ACC-001-SAV"},
+        {"txn_id": "TXN-20250910-005", "date": "2025-09-10", "type": "debit", "amount": 15000.00, "description": "Rent Transfer — NEFT", "category": "rent", "account_id": "ACC-001-SAV"}
+      ]
+    },
+    {
+      "customer_id": "CUST002",
+      "name": "Priya Anand Nair",
+      "email": "priya.nair@email.com",
+      "phone": "+91-87654-32109",
+      "date_of_birth": "1990-11-22",
+      "kyc_status": "verified",
+      "kyc_last_updated": "2025-01-10",
+      "risk_profile": "low",
+      "accounts": [
+        {
+          "account_id": "ACC-002-SAV",
+          "type": "savings",
+          "balance": 892340.00,
+          "currency": "INR",
+          "status": "active",
+          "opened_date": "2019-07-15"
+        },
+        {
+          "account_id": "ACC-002-CC",
+          "type": "credit_card",
+          "card_type": "Platinum",
+          "credit_limit": 500000,
+          "outstanding_balance": 0,
+          "minimum_due": 0,
+          "due_date": "2025-10-20",
+          "reward_points": 34200,
+          "status": "active"
+        }
+      ],
+      "loans": [],
+      "recent_transactions": [
+        {"txn_id": "TXN-20250901-010", "date": "2025-09-01", "type": "credit", "amount": 150000.00, "description": "Salary Credit — InfoSys Ltd", "category": "income", "account_id": "ACC-002-SAV"},
+        {"txn_id": "TXN-20250905-011", "date": "2025-09-05", "type": "debit", "amount": 8999.00, "description": "Flipkart Electronics", "category": "shopping", "account_id": "ACC-002-CC"},
+        {"txn_id": "TXN-20250908-012", "date": "2025-09-08", "type": "debit", "amount": 25000.00, "description": "Mutual Fund SIP — Axis MF", "category": "investment", "account_id": "ACC-002-SAV"},
+        {"txn_id": "TXN-20250912-013", "date": "2025-09-12", "type": "debit", "amount": 3500.00, "description": "Electricity Bill — BESCOM", "category": "utility", "account_id": "ACC-002-SAV"}
+      ]
+    },
+    {
+      "customer_id": "CUST003",
+      "name": "Mohammed Faizan Ali",
+      "email": "faizan.ali@email.com",
+      "phone": "+91-76543-21098",
+      "date_of_birth": "1978-03-30",
+      "kyc_status": "pending_renewal",
+      "kyc_last_updated": "2023-04-01",
+      "risk_profile": "medium",
+      "accounts": [
+        {
+          "account_id": "ACC-003-SAV",
+          "type": "savings",
+          "balance": 56780.25,
+          "currency": "INR",
+          "status": "active",
+          "opened_date": "2018-01-20"
+        },
+        {
+          "account_id": "ACC-003-CC",
+          "type": "credit_card",
+          "card_type": "Classic",
+          "credit_limit": 100000,
+          "outstanding_balance": 78500.00,
+          "minimum_due": 3925.00,
+          "due_date": "2025-10-10",
+          "reward_points": 5600,
+          "status": "active"
+        }
+      ],
+      "loans": [
+        {
+          "loan_id": "LOAN-003-HL",
+          "type": "home",
+          "principal": 3500000,
+          "outstanding": 2850000,
+          "interest_rate": 9.25,
+          "emi_amount": 31245,
+          "tenure_months": 240,
+          "remaining_emis": 198,
+          "next_emi_date": "2025-10-01",
+          "status": "active"
+        },
+        {
+          "loan_id": "LOAN-003-PL",
+          "type": "personal",
+          "principal": 200000,
+          "outstanding": 180000,
+          "interest_rate": 15.0,
+          "emi_amount": 4754,
+          "tenure_months": 48,
+          "remaining_emis": 44,
+          "next_emi_date": "2025-10-01",
+          "status": "overdue"
+        }
+      ],
+      "recent_transactions": [
+        {"txn_id": "TXN-20250901-020", "date": "2025-09-01", "type": "credit", "amount": 65000.00, "description": "Business Income — Faizan Traders", "category": "income", "account_id": "ACC-003-SAV"},
+        {"txn_id": "TXN-20250903-021", "date": "2025-09-03", "type": "debit", "amount": 31245.00, "description": "EMI Auto-Debit — Home Loan", "category": "loan_emi", "account_id": "ACC-003-SAV"},
+        {"txn_id": "TXN-20250907-022", "date": "2025-09-07", "type": "debit", "amount": 12000.00, "description": "Jewellery Purchase — Tanishq", "category": "shopping", "account_id": "ACC-003-CC"},
+        {"txn_id": "TXN-20250910-023", "date": "2025-09-10", "type": "debit", "amount": 4500.00, "description": "LPG Gas + Groceries", "category": "household", "account_id": "ACC-003-SAV"}
+      ]
+    },
+    {
+      "customer_id": "CUST004",
+      "name": "Sneha Reddy Venkatesh",
+      "email": "sneha.reddy@email.com",
+      "phone": "+91-65432-10987",
+      "date_of_birth": "1995-08-12",
+      "kyc_status": "verified",
+      "kyc_last_updated": "2025-05-18",
+      "risk_profile": "low",
+      "accounts": [
+        {
+          "account_id": "ACC-004-SAV",
+          "type": "savings",
+          "balance": 1245890.75,
+          "currency": "INR",
+          "status": "active",
+          "opened_date": "2021-09-01"
+        },
+        {
+          "account_id": "ACC-004-CC",
+          "type": "credit_card",
+          "card_type": "Platinum",
+          "credit_limit": 750000,
+          "outstanding_balance": 125400.50,
+          "minimum_due": 6270.03,
+          "due_date": "2025-10-25",
+          "reward_points": 56700,
+          "status": "active"
+        }
+      ],
+      "loans": [
+        {
+          "loan_id": "LOAN-004-PL",
+          "type": "personal",
+          "principal": 800000,
+          "outstanding": 0,
+          "interest_rate": 11.0,
+          "emi_amount": 17520,
+          "tenure_months": 48,
+          "remaining_emis": 0,
+          "next_emi_date": null,
+          "status": "closed"
+        }
+      ],
+      "recent_transactions": [
+        {"txn_id": "TXN-20250901-030", "date": "2025-09-01", "type": "credit", "amount": 200000.00, "description": "Salary Credit — Google India", "category": "income", "account_id": "ACC-004-SAV"},
+        {"txn_id": "TXN-20250904-031", "date": "2025-09-04", "type": "debit", "amount": 45000.00, "description": "MakeMyTrip — Flight Booking", "category": "travel", "account_id": "ACC-004-CC"},
+        {"txn_id": "TXN-20250906-032", "date": "2025-09-06", "type": "debit", "amount": 18500.00, "description": "Zara — Fashion Purchase", "category": "shopping", "account_id": "ACC-004-CC"},
+        {"txn_id": "TXN-20250909-033", "date": "2025-09-09", "type": "debit", "amount": 50000.00, "description": "FD Deposit — 1 Year", "category": "investment", "account_id": "ACC-004-SAV"},
+        {"txn_id": "TXN-20250915-034", "date": "2025-09-15", "type": "debit", "amount": 7800.00, "description": "Health Insurance Premium", "category": "insurance", "account_id": "ACC-004-SAV"}
+      ]
+    },
+    {
+      "customer_id": "CUST005",
+      "name": "Arjun Singh Chauhan",
+      "email": "arjun.chauhan@email.com",
+      "phone": "+91-54321-09876",
+      "date_of_birth": "1982-12-05",
+      "kyc_status": "verified",
+      "kyc_last_updated": "2024-08-30",
+      "risk_profile": "high",
+      "accounts": [
+        {
+          "account_id": "ACC-005-SAV",
+          "type": "savings",
+          "balance": 12340.00,
+          "currency": "INR",
+          "status": "active",
+          "opened_date": "2017-05-22"
+        },
+        {
+          "account_id": "ACC-005-CC",
+          "type": "credit_card",
+          "card_type": "Classic",
+          "credit_limit": 75000,
+          "outstanding_balance": 72000.00,
+          "minimum_due": 3600.00,
+          "due_date": "2025-09-28",
+          "reward_points": 800,
+          "status": "suspended"
+        }
+      ],
+      "loans": [
+        {
+          "loan_id": "LOAN-005-PL",
+          "type": "personal",
+          "principal": 300000,
+          "outstanding": 285000,
+          "interest_rate": 18.0,
+          "emi_amount": 8820,
+          "tenure_months": 36,
+          "remaining_emis": 33,
+          "next_emi_date": "2025-10-01",
+          "status": "overdue"
+        }
+      ],
+      "recent_transactions": [
+        {"txn_id": "TXN-20250815-040", "date": "2025-08-15", "type": "credit", "amount": 30000.00, "description": "Freelance Payment Received", "category": "income", "account_id": "ACC-005-SAV"},
+        {"txn_id": "TXN-20250820-041", "date": "2025-08-20", "type": "debit", "amount": 25000.00, "description": "Cash Withdrawal — ATM", "category": "cash", "account_id": "ACC-005-SAV"},
+        {"txn_id": "TXN-20250825-042", "date": "2025-08-25", "type": "debit", "amount": 8500.00, "description": "Petrol + Vehicle Service", "category": "transport", "account_id": "ACC-005-CC"}
+      ]
+    }
+  ]
+}
